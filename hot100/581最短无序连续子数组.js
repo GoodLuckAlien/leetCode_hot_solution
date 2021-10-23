@@ -60,27 +60,3 @@ console.log(
         [2,6,4,8,10,9,15]
     )
 )
-
-
-function sayName(){
-    console.log('hello,world')
-    sayName()
-}
-
-function sayName1(){
-    console.log('hello,world')
-    setTimeout(() => {
-        sayName1()
-    },0);
-}
-
-function sayName2(){
-    console.log('hello,world')
-    Promise.resolve().then(()=>{
-        sayName2()
-    })
-}
-
-sayName()
-sayName1()
-sayName2()
